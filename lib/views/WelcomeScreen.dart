@@ -1,6 +1,4 @@
-
-
-import 'imports/imports.dart';
+import 'package:bike_rental_app_ui/imports/imports.dart';
 
 
 class WelcomeScreen extends StatefulWidget {
@@ -40,29 +38,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 10.h,),
-                  appBar(),
+                  appBar(color: Colors.white,),
                      SizedBox(height: 90.h,),
                   Text("bike rent", style:TextStyle(color: Colors.white, fontSize:43)), 
                     SizedBox(height: 8.h,),
                   Text("largest rental service in new york", style:TextStyle(color: Colors.white, fontSize:15)), 
                      SizedBox(height: 20.h,),
-                  Container(
-                    height: 60.h,
-                    width: 130.w,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      gradient: LinearGradient(
-                        begin:Alignment.centerLeft,
-                        end: Alignment.centerRight,
-                        colors: [
-                             Color(0xff6030f4),
-                          Color(0xff9829f5),
-                        
-                        ],
-
-                      )
-                    ),
-                    child: Center(child: Text("Get started", style:TextStyle(color: Colors.white, ))),
+                  GradientButton(
+                    borderRadius: 13,
+                    text: "Get Started",
                   )   
 
                   
@@ -73,6 +57,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         ),
       ),
     );
+
+    
   }
 }
-

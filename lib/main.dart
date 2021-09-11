@@ -1,4 +1,6 @@
-import 'views/imports/imports.dart';
+
+
+import 'imports/imports.dart';
 
 
 void main() {
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        designSize: Size(360, 690),
       builder: () => MaterialApp(
-home: WelcomeScreen()
+        home: HomeScreen()
       )
     );
   }
